@@ -3,7 +3,6 @@
 ## 📌 Overview
 The **Call Taxi Management System** is a console-based application built in **C++** that simulates a taxi booking and management service.  
 It allows customers to book taxis, view available taxis, check fare details, and allows the system to manage trip assignments efficiently.  
-
 This project is designed for students and beginners to understand **object-oriented programming (OOP)** concepts, file handling, and basic algorithm implementation in C++.
 
 ---
@@ -36,102 +35,156 @@ This project was built to:
 ## ✨ Features
 - **Book Taxi** – Customer can book a taxi by entering pickup and drop locations.
 - **View Available Taxis** – Display taxis free at the given time.
-- **Fare Calculation** – Based on distance and time.
-- **Trip Records** – Stores past booking details.
-- **Taxi Assignment Logic** – Allocates nearest available taxi.
-- **Persistent Storage** – Saves taxi and trip details in text files.
+- **Calculate Fare** – Automatic fare calculation based on distance.
+- **Trip History** – View past bookings and trip details.
+- **Persistent Data** – All taxi and trip data saved in text files.
+- **OOP Design** – Uses classes, constructors, and file I/O.
 
 ---
 
 ## 🛠 Technologies Used
 - **Language:** C++
-- **Concepts:**
-  - Object-Oriented Programming (OOP)
-  - File Handling (`fstream`)
-  - Data Structures (arrays, structs, vectors)
-  - Basic algorithms for taxi allocation
-- **Environment:** Code::Blocks, Dev-C++, or any C++ compiler
+- **Compiler:** GCC, Code::Blocks, Dev-C++, or Visual Studio
+- **File Handling:** Text files (`.txt`) for data storage
+- **Concepts Used:**
+  - Classes and Objects
+  - File I/O
+  - Vectors and Arrays
+  - Control Structures
 
 ---
 
-## 📋 Project Workflow
-1. **User Input** – Customer enters pickup/drop details.
-2. **Check Availability** – System checks free taxis.
-3. **Taxi Assignment** – Nearest taxi assigned based on location and availability.
-4. **Fare Calculation** – Based on distance and rate.
-5. **Store Records** – Save booking details for future reference.
-6. **Display Output** – Show booking confirmation.
+## 🔄 Project Workflow
+1. Customer opens the system
+2. Selects "Book Taxi" option
+3. Enters pickup and drop location
+4. System checks available taxis
+5. Assigns nearest free taxi
+6. Calculates fare and confirms booking
+7. Stores booking details in file
 
 ---
 
-## ⚙ Installation
+## 📥 Installation
+
+### Prerequisites
+- C++ compiler (GCC, Clang, MSVC)
+- IDE (Code::Blocks, Dev-C++, Visual Studio, or any text editor)
+
+### Steps
+
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/Call-Taxi-Management-System.git
+git clone https://github.com/satheeshMulinti/call-taxi-management-systems.git
 
-▶ How to Run
-Option 1: Using Terminal
-g++ taxi_management.cpp -o taxi
-./taxi
+# Navigate to the project folder
+cd call-taxi-management-systems
+```
 
-Option 2: Using IDE
+---
 
-Open taxi_management.cpp in Code::Blocks / Dev-C++
+## ▶️ How to Run
 
-Compile and run directly from the IDE
+### Using Command Line (Linux/Mac)
 
-🏗 Code Structure
-📂 Call-Taxi-Management-System
- ├── taxi_management.cpp   # Main source code
- ├── taxis.txt             # Stores taxi details
- ├── trips.txt             # Stores booking history
- ├── README.md             # Project documentation
- └── LICENSE               # License file
+```bash
+g++ "call taxi management system program.cpp" -o taxi_system
+./taxi_system
+```
 
-📏 Evaluation
+### Using Command Line (Windows)
+
+```cmd
+g++ "call taxi management system program.cpp" -o taxi_system.exe
+taxi_system.exe
+```
+
+### Using IDE
+- Open "call taxi management system program.cpp" in Code::Blocks / Dev-C++
+- Compile and run directly from the IDE
+
+---
+
+## 🏗 Code Structure
+
+```
+📂 call-taxi-management-systems
+ ├── call taxi management system program.cpp   # Main source code
+ ├── call taxi management system program.exe   # Executable file
+ ├── README.md                                 # Project documentation
+```
+
+---
+
+## 📏 Evaluation
 
 The project can be evaluated on:
-
-Functionality – All booking features work as expected
-
-Code Quality – Proper use of OOP principles
-
-Efficiency – Correct taxi assignment logic
-
-User Experience – Simple and clear interface
-
-Persistence – Data saved and retrieved correctly from files
+- **Functionality** – All booking features work as expected
+- **Code Quality** – Proper use of OOP principles
+- **Efficiency** – Correct taxi assignment logic
+- **User Experience** – Simple and clear interface
+- **Persistence** – Data saved and retrieved correctly from files
 
 Example function call in code:
 
+```cpp
 Taxi t;
 t.bookTaxi("LocationA", "LocationB", 10); // 10 km distance
+```
 
-🖥 Sample Output
+---
+
+## 🖥 Sample Output
+
+```
 Welcome to Call Taxi Management System
 1. Book Taxi
 2. View Available Taxis
 3. Exit
-Enter choice: 1
 
+Enter choice: 1
 Enter Pickup Location: A
 Enter Drop Location: C
 Distance: 12 km
+
 Taxi Assigned: T2
 Fare: ₹240
 Booking Confirmed!
+```
 
-🚀 Future Enhancements
+---
 
-Add graph-based shortest route calculation
+## 🚀 Future Enhancements
+- Add graph-based shortest route calculation
+- Integrate real-time location updates
+- Add GUI using Qt or SFML
+- Implement payment gateway simulation
+- Multi-user support with login system
 
-Integrate real-time location updates
+---
 
-Add GUI using Qt or SFML
+## 🤝 Contributing
 
-Implement payment gateway simulation
+Contributions are welcome! If you want to improve this project:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature-branch`)
+5. Open a Pull Request
 
-Multi-user support with login system
+---
 
-# Navigate to the project folder
-cd Call-Taxi-Management-System
+## 📜 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📧 Contact
+
+For any queries or suggestions, feel free to reach out:
+- **GitHub:** [satheeshMulinti](https://github.com/satheeshMulinti)
+
+---
+
+⭐ **If you find this project helpful, please give it a star!** ⭐
